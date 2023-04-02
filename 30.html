@@ -1,0 +1,27 @@
+<script>
+    max=parseInt(prompt("Enter maximum integer of the range"));
+    min=parseInt(prompt("Enter minimum integer of the range"));
+
+    x=getRandom(min,max);
+
+    function getRandom(min,max){
+        return Math.floor(Math.random()*(max-min+1))+min;
+    }
+
+    console.log(x)
+
+    a=parseInt(prompt("Guess a number between "+min+" and "+max));
+   // document.write(a+"<br>")
+
+    while(a!=x){
+        if(a>x){
+            alert("Too High!! Try Again");
+        }
+        else{
+            alert("Too low!! Try Again");
+        }
+        a=parseInt(prompt("Guess a number between "+min+" and "+max));
+    }
+
+    document.write("Congratulations!! You guessed the correct number.")
+</script>

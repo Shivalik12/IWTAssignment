@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="display" onclick="hide()">
+
+    </div>
+    <script>
+        un=prompt("Enter your name");
+        d=new Date();
+        hr=d.getHours();
+        mm=d.getMinutes();
+        ss=d.getSeconds();
+        cTime=hr+":"+mm+":"+ss;
+        if (hr>12 && hr<17){
+            welcome="Good Afternoon ";
+        }
+        if (hr<12){
+            welcome="Good Morning ";
+        }
+        else{
+            welcome="Good Evening ";
+        }
+        document.getElementById('display').innerHTML=welcome+un;
+        document.getElementById('display').innerHTML=cTime;
+    </script>
+</body>
+</html>

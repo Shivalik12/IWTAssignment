@@ -1,0 +1,46 @@
+.container {
+    height: 600px;
+    width: 800px;
+    background-color: rgba(250, 238, 159, 0.782);
+    position:relative;
+    border: solid 3px blueviolet;
+    padding: 10px;
+}
+
+img {
+    height:100%;
+    width: 100%;
+}
+
+.container > div {
+    height: 60px;
+    width: 100px;
+    position: relative;
+    animation-name: anim1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    border: solid 3px rgb(43, 226, 156);
+}
+
+@keyframes anim1 {
+    from {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 700px;
+    }
+    50% {
+        top: 540px;
+        left: 700px;
+    }
+    75% {
+        top: 540px;
+        left: 0;
+    }
+    to {
+        top: 0;
+        left: 0;
+    }
+}

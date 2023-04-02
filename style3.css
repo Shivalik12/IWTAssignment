@@ -1,0 +1,38 @@
+.container {
+    border: 2px dashed black;
+    width: 1300px;
+    height: 650px;
+    display: flex;
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    background-color: yellow;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: absolute; */
+    
+}
+
+.container > div {
+    border: 2px inset red;
+    height: 200px;
+    width: 100px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    position: relative;
+    transform:rotate(0deg) scale(1);
+}
+
+.container > div > img {
+    height: 60px;
+    width: 60px;
+}
+
+.container > div:hover {
+    transform: rotate(0deg) scale(1.2);
+    transition: 1s;
+    /* transform: translate(50px) skewY(20deg); */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>EX-23</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .card {
+            width: 33%;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.615);
+            padding: 2px;
+            position: relative;
+        }
+        .card > img {
+            width: 100%;
+        }
+        .desc{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content:space-evenly; flex-direction: row;">
+        <script >
+            images=["4.jpg","2.jpg","6.jpg"];
+            titles=["Annual Function", "Animal", "Art"];
+            introduction=["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ad velit necessitatibus inventore amet consequuntur incidunt a obcaecati neque iste voluptatem atque, nam suscipit? Eius sed corporis ex eum odit.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ad velit necessitatibus inventore amet consequuntur incidunt a obcaecati neque iste voluptatem atque, nam suscipit? Eius sed corporis ex eum odit.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ad velit necessitatibus inventore amet consequuntur incidunt a obcaecati neque iste voluptatem atque, nam suscipit? Eius sed corporis ex eum odit."];
+            date=["22 Nov 2023", "12 Nov 2023", "18 Nov 2023"]
+            for(i=0;i<=2;i++){
+                card="<div class='card'>"
+                +"<img src='images/"+images[i]+"'>"
+                +"<div class='desc'>"
+                    +"<h1>"+titles[i]+"</h1>"
+                    +"<p>"+introduction[i]+"</p>"
+                    +""
+                +"</div>"
+                +"</div>"
+                document.write(card);
+            }
+            
+        </script>
+    </div>
+    
+</body>
+</html>

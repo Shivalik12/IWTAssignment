@@ -1,0 +1,183 @@
+.navi {
+    position: relative;
+    height: 10%;
+    width: 100%;
+    /* background-color: rgb(126, 117, 106); */
+}
+.navi > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
+}
+
+.navi > ul li {
+    margin: 5px;
+    color: aqua;
+    font-size: 30px;
+    box-shadow: 5px 5px 5px rgb(126, 235, 198);
+    /* float: left; */
+    margin-right: 50px;
+}
+
+.navi > ul > a {
+    text-decoration: none;
+}
+
+.navi > ul li:hover {
+    transform:scale(1.3);
+    background-color: rgb(233, 33, 56);
+}
+
+.hidden{
+    list-style: none;
+    display:none;
+}
+
+/* .hidden a:hover {
+    background: #000;
+    color: white;
+    display: block;
+} */
+
+.ab:hover .hidden{
+    display: block;
+    color: white;
+}
+
+.container1{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 100%;
+}
+
+.img{
+    display: flex;
+    width: 40%;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+}
+
+.nav{
+    display: flex;
+    width: 60%;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+}
+
+.nav a{
+    margin: 10px;
+    color: blue;
+    font-size: 15px;
+    /* box-shadow: 5px 5px 5px rgb(126, 235, 198); */
+    /* float: left; */
+    /* margin-right: 50px; */
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.container2{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    background-image: url("images/BanasthaliVidyapeeth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3{
+    width: 60%;
+    justify-content: flex-start;
+}
+
+.container4{
+    width: 40%;
+    justify-content: flex-end;
+    /* border: 5px solid yellow; */
+    background-color: rgba(0,0,0,.5);
+    color: aliceblue;
+}
+
+.container4 > p {
+    margin-top: 25%;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.container5{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+}
+
+.container6{
+    font-size: 25px;   
+    width: 70%;
+    /* border-top-width: 20px; */
+    text-align: center;
+}
+
+.container7{
+    width: 30%;
+    margin: 20px;
+}
+
+pre{
+    font-size:18px;
+    
+}
+
+.newsEvents {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(157, 156, 156);
+    /* background-color: hotpink; */
+}
+
+.news {
+    width: 50%;
+    /* border: 2px solid black; */
+    margin: 12px;
+    margin-right: 30px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.events{
+    width: 50%;
+    margin: 12px;
+    margin-right: 30px;
+    padding: 15px;
+    font-size: 20px;    
+}
+
+/* .newsEvents li{
+    height: 10;
+    width: 10;
+    list-style-image:url("images/apaji.jpg");
+} */
+
+.container8{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color:rgba(19, 38, 65, 0.5);
+    background: cover;
+    margin-right: 30px;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.container10 > img{
+    margin: 80px 30px 20px;
+    height: 700px;
+    width: 90%;
+    border-radius: 10%;
+}

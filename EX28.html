@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>EX-28</title>
+    <style>
+        div{
+            font-size: 50px;
+            color: rgb(50, 159, 14);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="display" onclick="hide()">
+
+    </div>
+    <script>
+        un=prompt("Enter you name");
+        function clock(){
+            d=new Date();
+            hr=d.getHours();
+            mm=d.getMinutes();
+            ss=d.getSeconds();
+            cTime=hr+":"+mm+":"+ss;
+            x=document.getElementById('display');
+            welcome=document.getElementById('display');
+            if (hr>12 && hr<17){
+                welcome.innerHTML="Good Afternoon "+un+"<br>"+cTime;
+            }
+            if (hr<12){
+                welcome.innerHTML="Good Morning "+un+"<br>"+cTime;
+            }
+            else{
+                welcome.innerHTML="Good Evening "+un+"<br>"+cTime;
+            }
+        }
+        setInterval(clock,1000);
+        function hide(){
+            document.getElementById('display').style.display="none";
+        }
+    </script>
+</body>
+</html>
